@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*------------------------------- home-------------------------------- */
+
+.bg {
+  background-image: url(images/hero-banner.png), url(images/bg.png);
+  background-size: 50% 100% contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 100vh;
+}
+
+.home li {
+  color: black;
+  font-size: 1rem;
+}
+
+.cont {
+  line-height: 6vh;
+}
+
+.home h1 {
+  font-size: 4vmax;
+}
+
+.article {
+  align-items: center;
+  height: 30vh;
+}
+
+/* -------------------------------------------------------- */
+/*----------------------- about---------------------------- */
+
+.bg-about {
+  background-image: url(images/about-bg.png);
+  /* -webkit-box-reflect: below 20px; */
+  background-size: cover;
+}
+
+.icn-cont {
+  width: 100%;
+  text-align: center;
+}
+
+.about i {
+  text-align: center;
+  color: rgb(244, 75, 119);
+  font-size: 2vmax;
+}
+
+.about h3 {
+  font-size: 1.3vmax;
+}
+
+.about p {
+  font-size: 1vmax;
+  color: rgb(168, 167, 168);
+}
+
+.about-two img {
+  display: block;
+
+  max-width: 100%;
+  margin-left: auto;
+  width: 50%;
+}
+/* -------------------------------------------------------------------- */
+/*--------------------------- CTA------------------------------------ */
+
+.CTA-bg {
+  /* background-color: rgb(251, 84, 107); */
+  background-image: linear-gradient(
+    180deg,
+    rgb(251, 84, 107),
+    rgb(220, 86, 84)
+  );
+}
+.user-box input {
+  width: 40%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+::placeholder {
+  color: white;
+  text-transform: capitalize;
+  font-size: 1vmax;
+}
+
+.user-box .inp {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: grey;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid rgb(194, 193, 193);
+  outline: none;
+  background: transparent;
+}
+
+.user-box {
+  display: block;
+  margin-left: auto;
+  width: 70%;
+}
+
+.inp::placeholder {
+  color: gray;
+}
+
+/* ------------------------- features ---------------- */
+
+.features h2 {
+  line-height: 4vmax;
+}
+
+.features h2 {
+  font-size: 3.5vmax;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.features p {
+  color: rgb(168, 167, 168);
+}
+
+/*----------------------------------------- contact---------------------------------- */
+.contact .user-box {
+  display: block;
+  margin-left: auto;
+  width: 100%;
+}
+
+.contact label {
+  text-transform: capitalize;
+}
+/* ---------------------------------------------------------- */
+
+/*------------------------- footer----------------------------- */
+footer img {
+  max-width: 100%;
+}
+/**/
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer li {
+  color: rgb(168, 167, 168);
+  cursor: pointer;
+  /* font-size: 1vmax; */
+}
+
+footer li:first-child {
+  color: black;
+  margin-bottom: 0.7rem;
+  font-weight: bold;
+}
+
+footer li:first-child:hover {
+  color: black;
+}
+
+footer li:hover {
+  color: rgb(255, 101, 99);
+}
+
+footer i {
+  color: rgb(168, 167, 168);
+}
+
+footer i:hover {
+  color: rgb(255, 101, 99);
+}
+
+/* -------------------------------------------- */
+
+/* -----------------------Responsive------------------------- */
+@media (max-width: 768px) {
+  .bg {
+    background-image: url(images/bg.png);
+    height: 100vh;
+  }
+
+  .article,
+  .home-para {
+    text-align: center;
+    font-size: 2vmax;
+  }
+
+  .bg .home-btn {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 2vmax;
+  }
+
+  .cont {
+    line-height: 4vh;
+  }
+
+  .about-two img {
+    display: block;
+
+    margin: auto;
+    width: 100%;
+  }
+  footer div,
+  i {
+    font-size: 2vmax;
+  }
+}
